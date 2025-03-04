@@ -1,0 +1,45 @@
+/* 代表在html內的所有指令<>，都會產生一個框線框起來 */
+*{
+    /* 產生框線，為實心線條，粗細為2px，綠色 */
+    
+    /* 產生框線，為實心線條，粗細為2px，綠色 */
+    border: 2px solid rgb(161, 231, 240);
+}
+/* 整個視窗畫面設定 */
+html,body{
+    /* 設定背景色為橘色 */
+    background-color: rgb(128, 194, 137);
+    /* 設定視窗高度為100% */
+    height: 100%;
+    /* 設定視窗寬度為100% */
+    width: 100%;
+    /* 把.box至於視窗上下左右的中間 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*  */
+.box{
+    background-color: rgb(255, 255, 255);
+    /* 設定寬度380px，置中在視窗中間 */
+    width: 380px;
+    margin: 0 auto;
+}
+.top{
+    /* 連接一個網頁圖片當作top背景圖 */
+    background-image: url(https://pic.pimg.tw/sidney6811/1529508979-1559019819_n.jpg);
+    /* .top的高設定為330px，背景圖充滿整個.top */
+    height: 330px;
+    background-size: cover;
+    /* 把h2的文字置於.top的下方，且文字靠左 */
+    display: flex;
+    align-items: flex-end;
+}
+
+.top h2{
+    /* 設定文字顏色為白色 */
+    color: white;
+    /* 距離下方外距為20px，距離左方外距為10px */
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
