@@ -8,13 +8,74 @@
     <title>20250304第三周作品</title>
     <!-- 以下檔案主要設定本網頁格式 -->
     <link rel="stylesheet" href="style.css">
+    <style>
+        .circle {
+            width: 50px;
+            height: 50px;
+            background-color: #cb7e99;
+            border-radius: 50%;
+            position: absolute;
+            right: 50px;
+            bottom: -10px;
+        }
+        .rectangle {
+            width: 25px;
+            height: 50px;
+            background-color: #cb7e99;
+            position: absolute;
+            right: 20px;
+            top: 0;
+        }
+        .top {
+            position: relative;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btnwebsite {
+            background-color: #cb7e99;
+            color: white;
+            left: 25px;
+            margin-left: 50px;
+        }
+        .btnnews {
+            background-color: white;
+            color: #cb7e99;
+            right: 25px;
+            border: 2px solid #cb7e99;
+            margin-right: 50px;
+            float: right;
+        }
+        .box {
+            box-shadow: 10px 10px 10px black;
+            transition: transform 0.3s;
+        }
+        .box:hover {
+            transform: translate(-10px, -10px);
+        }
+        .btn:hover {
+            background-color: lightgray;
+        }
+    </style>
 </head>
 <body>
 
 <div class="box">
     <div class="top">
         <!-- h1~~h6為標題字 -->
-        <h2> 浮光書店 IlluminationBooks </h2>
+        <h2> 浮光書店 <span class ="smallText" style="font-size: 14px;">IlluminationBooks</span> </h2>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="rectangle"></div>
     </div>
         <div class="bottom">
             <!-- unorder list -->
@@ -27,8 +88,8 @@
                     今日正常營業 · 14:00–21:30 </li>
              </ul>
              
-             <div class="btn website">前往網站</div>
-             <div class="btn btnnews" >更多訊息</div>
+             <a href="https://www.tku.edu.tw/" class="btn btnwebsite">前往網站</a>
+             <a href="https://www.et.tku.edu.tw/" class="btn btnnews">更多訊息</a>
         </div>     
 </div>
 
