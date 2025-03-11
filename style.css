@@ -3,12 +3,12 @@
     /* 產生框線，為實心線條，粗細為2px，綠色 */
     
     /* 產生框線，為實心線條，粗細為2px，綠色 */
-    border: 2px solid rgb(161, 231, 240);
+    /* border: 2px solid rgb(240, 173, 161); */
 }
 /* 整個視窗畫面設定 */
 html,body{
     /* 設定背景色為橘色 */
-    background-color: rgb(128, 194, 137);
+    background-color: rgb(158, 32, 32);
     /* 設定視窗高度為100% */
     height: 100%;
     /* 設定視窗寬度為100% */
@@ -40,6 +40,33 @@ html,body{
     /* 設定文字顏色為白色 */
     color: white;
     /* 距離下方外距為20px，距離左方外距為10px */
-    margin-bottom: 20px;
-    margin-left: 10px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    letter-spacing: 1px;
+    width: 100%;
+    /* 產生一個背景顏色為黑色，透明度為0.3，由下而上漸層 */
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3));
+}
+.top h2.smallText{
+    font-size: 14px;
+    /* 字距設定為1px */
+    letter-spacing: 1px;
+    
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    background-color:  #cb7e99;
+}
+ul{
+    list-style-type: none;
+    padding: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+    font-size: 14px;
+
+}
+li{
+    font-size: 14px;
+    margin-bottom: 5px;
 }
